@@ -2,7 +2,6 @@ FROM eclipse-temurin:26-jdk
 
 WORKDIR /work/
 
-# Copia l'output del packaging Quarkus JVM
 COPY target/quarkus-app/lib/ /work/lib/
 COPY target/quarkus-app/*.jar /work/
 COPY target/quarkus-app/app/ /work/app/
